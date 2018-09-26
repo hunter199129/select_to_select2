@@ -49,7 +49,6 @@ function replaceAllSelect2(){
             $("#" + elements[i].id).select2({
                 width:"175px",
                 placeholder: "",
-                allowClear: true
             });
         }
         else {
@@ -57,7 +56,6 @@ function replaceAllSelect2(){
             $("#" + elements[i].id).select2({
                 width:"resolve",
                 placeholder: "",
-                allowClear: true
             });
         }
 
