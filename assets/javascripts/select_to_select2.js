@@ -53,7 +53,7 @@ function replaceAllSelect2(){
         else {
             // For All Pages
             $("#" + elements[i].id).select2({
-                width:"resolve",
+                width:"60%",
                 placeholder: "",
             });
         }
