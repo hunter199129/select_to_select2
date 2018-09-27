@@ -20,15 +20,14 @@
     // for all elements
     // click event only for toggle to multiple select
     $(document).click(function(event){
-        if (event.target.className === 'toggle-multiselect') replaceAllSelect2();
+        if (event.target.tagName === 'A' || event.target.className === 'toggle-multiselect') replaceAllSelect2();
     });
 
     // for all elements
     // prevent bug from choosing searched result
+    // or mousedown while searching will trigger the function
     $(document).change(function(event){
-        setTimeout(function() {
-            replaceAllSelect2();
-        }, 100);
+        if (event.target.tagName === 'SELECT') replaceAllSelect2();
     });
 
 }(jQuery));
