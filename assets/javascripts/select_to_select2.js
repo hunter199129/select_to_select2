@@ -50,6 +50,9 @@ function replaceAllSelect2(){
                 placeholder: "",
             });
         }
+        else if (elements[i].id == 'available_c' || elements[i].id == 'select_c') {
+            // Avoid to render select columns option, because of the columm is selected by option not selected attribute.
+        }
         else {
             // For All Pages
             $("#" + elements[i].id).select2({
