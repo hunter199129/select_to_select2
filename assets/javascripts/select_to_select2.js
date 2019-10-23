@@ -50,8 +50,10 @@ function replaceAllSelect2(){
                 placeholder: "",
             });
         }
-        else if (elements[i].id == 'available_c' || elements[i].id == 'select_c') {
+        // else if (elements[i].id == 'available_c' || elements[i].id == 'select_c') {
+        else if (elements[i].id == 'available_c' || elements[i].id == 'select_c' || elements[i].style.display == 'none') {
             // Avoid to render select columns option, because of the columm is selected by option not selected attribute.
+            // Avoid to render hidden select.
         }
         else {
             // For All Pages
